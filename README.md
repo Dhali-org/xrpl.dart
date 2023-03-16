@@ -28,7 +28,7 @@ dependencies:
 To use xrpl.dart, first import it into your code:
 
 ```dart
-import 'package:xrpl/xrpl.dart;
+import 'package:xrpl/xrpl.dart';
 ```
 
 You can then use the functionality provided by `xrpl.js` through the `xrpl.dart` bindings:
