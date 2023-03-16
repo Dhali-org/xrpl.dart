@@ -18,7 +18,7 @@ To use xrpl.dart in your Dart project, please follow these steps:
 
 ```yaml
 dependencies:
-  xrpl: ^0.0.1
+  xrpl: ^0.0.2
 ```
 
 3. Finally, run `dart pub get` to download the package.
