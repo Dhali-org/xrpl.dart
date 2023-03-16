@@ -10,7 +10,7 @@ This package is a work in progress, and so does not fully replicate the function
 
 To use xrpl.dart in your Dart project, please follow these steps:
 1. Add the following snippet to the bottom of the `body` of your `web/index.html`:
-```
+```html
   <script src="https://unpkg.com/xrpl@2.6.0/build/xrpl-latest-min.js"></script>
 ```
 
@@ -57,4 +57,4 @@ You can then use the functionality provided by `xrpl.js` through the `xrpl.dart`
 Contributions to xrpl.dart are welcome! To contribute, please fork the repository and submit a pull request. Before submitting a pull request, please make sure that your code follows the [Dart Style Guide](https://dart.dev/guides/language/effective-dart/style).
 
 ## license
-xrpl.dart is licensed under the MIT License. See the LICENSE file for more information.
+xrpl.dart is licensed under the BSD-3-Clause License. See the LICENSE file for more information.
