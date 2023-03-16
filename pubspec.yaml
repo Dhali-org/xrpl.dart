@@ -1,7 +1,7 @@
 name: xrpl
 description: Dart bindings for the xrpl.js library.
 version: 0.0.1
-homepage:
+repository: https://github.com/Dhali-org/xrpl.dart
 
 environment:
   sdk: '>=2.17.5 <4.0.0'
