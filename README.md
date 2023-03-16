@@ -8,14 +8,20 @@ This package is a work in progress, and so does not fully replicate the function
 
 ## Getting started
 
-To use xrpl.dart in your Dart project, simply add it as a dependency in your pubspec.yaml file:
+To use xrpl.dart in your Dart project, please follow these steps:
+1. Add the following snippet to the bottom of the `body` of your `web/index.html`:
+```
+  <script src="https://unpkg.com/xrpl@2.6.0/build/xrpl-latest-min.js"></script>
+```
+
+2.  Add it as a dependency in your pubspec.yaml file:
 
 ```yaml
 dependencies:
   xrpl: ^0.0.1
 ```
 
-Finally, run `dart pub get` to download the package.
+3. Finally, run `dart pub get` to download the package.
 
 ## Usage
 
