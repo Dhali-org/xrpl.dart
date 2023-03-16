@@ -10,7 +10,7 @@ This package is a work in progress, and so does not fully replicate the function
 
 To use xrpl.dart in your Dart project, please follow these steps:
 1. Add the following snippet to the bottom of the `body` of your `web/index.html`:
-```
+```html
   <script src="https://unpkg.com/xrpl@2.6.0/build/xrpl-latest-min.js"></script>
 ```
 
