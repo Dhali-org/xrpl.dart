@@ -13,11 +13,22 @@ class ClientOptions {
 }
 
 @JS()
+@anonymous
+class FundWalletOptions {
+  external String? amount;
+  external String? faucetHost;
+  external String? faucetPath;
+
+  external factory FundWalletOptions(
+      {String? amount, String? faucetHost, String? faucetPath});
+}
+
+@JS()
 class Client {
   external Client(String server, [ClientOptions clientOptions]);
   external dynamic connect();
   external dynamic disconnect();
-  external dynamic fundWallet(Wallet? wallet);
+  external dynamic fundWallet(Wallet? wallet, FundWalletOptions? options);
   external dynamic getXrpBalance(String address);
   external dynamic autofill(dynamic transactionOptions);
   external dynamic submitAndWait(
