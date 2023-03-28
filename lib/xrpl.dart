@@ -84,7 +84,41 @@ class PaymentChannelCreate {
 
 @JS()
 @anonymous
-class AccountChannelsRequest {
+class BaseRequest {
+  external String command;
+  external int? api_version;
+  external String? id;
+
+  external factory BaseRequest({
+    String command,
+    dynamic? api_version,
+    String? id,
+  });
+}
+
+@JS()
+@anonymous
+class AccountNFTsRequest extends BaseRequest {
+  external String account;
+  external String command;
+  external int? limit;
+  external int? api_version;
+  external String? id;
+  external dynamic marker;
+
+  external factory AccountNFTsRequest({
+    String account,
+    String command,
+    int? limit,
+    dynamic? api_version,
+    String? id,
+    dynamic marker,
+  });
+}
+
+@JS()
+@anonymous
+class AccountChannelsRequest extends BaseRequest {
   external String account;
   external String? destination_account;
   external String
