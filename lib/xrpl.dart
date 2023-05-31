@@ -84,6 +84,25 @@ class PaymentChannelCreate {
 
 @JS()
 @anonymous
+class PaymentChannelFund {
+  external String Account;
+  external String
+      TransactionType; // TODO: No way I'm aware of to initialise this to 'PaymentChannelCreate' since it and the factory below are external (which is required for interop),  At the moment, we have to explicitly assign it.
+  external String Channel;
+  external String Amount;
+  external int? Expiration;
+
+  external factory PaymentChannelCreate({
+    String Account,
+    String TransactionType,
+    String Channel,
+    String Amount,
+    int? Expiration,
+  });
+}
+
+@JS()
+@anonymous
 class BaseRequest {
   external String command;
   external int? api_version;
