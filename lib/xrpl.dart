@@ -92,7 +92,7 @@ class PaymentChannelFund {
   external String Amount;
   external int? Expiration;
 
-  external factory PaymentChannelCreate({
+  external factory PaymentChannelFund({
     String Account,
     String TransactionType,
     String Channel,
